@@ -35,7 +35,6 @@ class _TodolistState extends State<Todolist> {
               .then((value) {
             setState(() {
               getTodolist();
-              print("navigate");
             });
           });
         },
