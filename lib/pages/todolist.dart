@@ -6,7 +6,6 @@ import 'package:todolist/pages/add.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:todolist/pages/update_todolist.dart';
 
 class Todolist extends StatefulWidget {
@@ -36,6 +35,7 @@ class _TodolistState extends State<Todolist> {
               .then((value) {
             setState(() {
               getTodolist();
+              print("navigate");
             });
           });
         },
